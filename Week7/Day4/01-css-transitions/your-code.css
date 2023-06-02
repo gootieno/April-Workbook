@@ -5,6 +5,11 @@
     width: auto;
     margin-left: 300px;
     /* Your code here */
+    transition: transform 2s;
+}
+
+.rocket_svg:hover {
+    transform: rotate(250deg);
 }
 
 /* Create rocket hover animation here
@@ -17,6 +22,13 @@
     width: auto;
     margin-left: 200px;
     /* Your code here */
+    transition: transform cubic-bezier(1,-1.98, 0, 4.26) 2s;
+}
+
+.astronaut_svg:hover {
+    /* transform: translateX(100px); */
+    transform: rotate(700deg);
+    /* height: 400px; */
 }
 
 /* Create astronaut hover animation here
@@ -27,9 +39,26 @@
     height: 200px;
     width: auto;
     margin-left: 300px;
-    /* Your animation here
+
+    animation: spin 2s infinite linear;
 }
 
 @keyframes spin {
-    /* Set up your keyframe animation here
+   from {
+    transform: rotate(0deg);
+    /* rotate: 0deg */
+   }
+
+   50% {
+    /* height: 100px; */
+   }
+
+   70% {
+    /* transform: translateX(200px) */
+   }
+
+   to {
+    transform: rotate(360deg)
+    /* rotate: 360deg */
+   }
 }
