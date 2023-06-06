@@ -2,9 +2,18 @@ const http = require("http");
 const fs = require("fs");
 
 const getContentType = (ext) => {
-  if (ext === "jpg") return "image/jpeg";
-  else if (ext === "css") return "text/css";
-  else return "text/plain";
+  // if (ext === "jpg") return "image/jpeg";
+  // else if (ext === "css") return "text/css";
+  // else return "text/plain";
+
+  switch (ext) {
+    case "jpg":
+      return "image/jpeg";
+    case "css":
+      return "text/css";
+    default:
+      return "text/plain";
+  }
 };
 
 const server = http.createServer((req, res) => {

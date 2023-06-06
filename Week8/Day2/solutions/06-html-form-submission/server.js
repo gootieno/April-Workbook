@@ -108,6 +108,22 @@ const server = http.createServer((req, res) => {
 
     // Your code here
 
+    // look action and method on form for route handler
+
+    // in the route handler
+    /*
+      create a cat using the Cat class with req.body value
+
+      set status code
+
+      set header
+
+      THINK ABOUT THE BODY
+
+      // end res
+
+    */
+
     res.statusCode = 404;
     res.end("Page Not Found");
     return;
