@@ -34,15 +34,15 @@ website. Move on to the next request/response documentation.
 ### Ask for a page that doesn't exist
 
 Request components:
-- Method: GET
-- URL: /asdkjfhasldkj
-- Headers: none
-- Body: none
+- Method:
+- URL:
+- Headers:
+- Body:
 
 Response components:
-- Status code: 404
-- Headers: text/html
-- Body: Page not found html 
+- Status code:
+- Headers: 
+- Body:
 
 ### Ask for the products list page
 
