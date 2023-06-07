@@ -29,6 +29,8 @@ const getProducts = async () => {
 
   const responseBody = await response.text();
   console.log("response body ", responseBody);
+
+
 };
 
 getProducts();
