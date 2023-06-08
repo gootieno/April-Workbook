@@ -91,6 +91,11 @@ const server = http.createServer((req, res) => {
       if (urlParts.length === 3) {
         const dogId = urlParts[2];
         // Your code here
+
+        //find the index of the dog based on the dogId
+
+        //splice or remove that dog object from the array based on the found index
+
       }
       return res.end();
     }
