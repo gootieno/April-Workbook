@@ -51,3 +51,6 @@
     font-size: 1.25rem;
 }
 
+.gallery > ul > li.active-border {
+    border-color: red;
+}
