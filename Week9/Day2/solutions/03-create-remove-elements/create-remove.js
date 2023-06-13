@@ -30,7 +30,7 @@ add.addEventListener("click", async () => {
             2.add attributes to correct elements and inner text values if applicable
             3.select live element on the page
             4.append all new elements in order
-            5.append top level created element to live element
+            5.append top level created element to an element that exists on the html page
         */
 
     } catch (e) {
