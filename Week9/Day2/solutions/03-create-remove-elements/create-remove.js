@@ -18,6 +18,21 @@ add.addEventListener("click", async () => {
         /* Add the new dog card as a child to the ul in the .gallery element */
         // Your code here
 
+        /*
+            <li>
+                <figure>
+                    <img src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1007.jpg" />
+                    <figcaption>hound-afghan</figcaption>
+                </figure>
+            </li>
+
+            1.create all elements needed
+            2.add attributes to correct elements and inner text values if applicable
+            3.select live element on the page
+            4.append all new elements in order
+            5.append top level created element to live element
+        */
+
     } catch (e) {
         console.log("Couldn't fetch dog :(")
     }
