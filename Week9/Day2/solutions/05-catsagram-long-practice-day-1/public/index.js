@@ -18,7 +18,8 @@ const initializePage = async () => {
 
   imageContainer.appendChild(image);
   document.body.append(catHeading, imageContainer);
-  await fetchImage();
+  const imageUrl = await fetchImage();
+  image.src = imageUrl;
 };
 
 const fetchImage = async () => {
@@ -30,8 +31,9 @@ const fetchImage = async () => {
   const imageUrl = data[0].url;
   console.log("image url ", imageUrl);
 
-  const image = document.getElementById("cat-image");
-  image.setAttribute("src", imageUrl);
+  return imageUrl;
+  // const image = document.getElementById("cat-image");
+  // image.setAttribute("src", imageUrl);
 };
 
 window.onload = initializePage;
